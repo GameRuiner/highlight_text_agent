@@ -1,11 +1,27 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 
 export default function AIWidget() {
   const router = useRouter();
   const widgetRef = useRef<HTMLElement | null>(null);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const widget = document.querySelector(
+      'elevenlabs-convai'
+    ) as HTMLElement | null;
+    if (widget) {
+      widgetRef.current = widget;
+      const article = document.querySelector('article');
+      const articleText = article ? article.textContent?.trim() || '' : '';
+      const dynamicVars = {
+        article: articleText,
+      };
+      widget.setAttribute('dynamic-variables', JSON.stringify(dynamicVars));
+    }
+  }, [pathname]);
 
   useEffect(() => {
     const widget = document.querySelector(
