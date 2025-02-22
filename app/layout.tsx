@@ -4,7 +4,6 @@ import { getApiKey } from '@/app/actions';
 import { AppSidebar } from '@/components/app-sidebar';
 import { KeyProvider } from '@/components/key-provider';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Card } from '@/components/ui/card';
 import {
   SidebarInset,
   SidebarProvider,
