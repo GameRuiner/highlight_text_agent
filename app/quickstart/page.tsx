@@ -8,7 +8,7 @@ export default function Quickstart() {
               <span className="fern-breadcrumb">
                 <a
                   className="fern-breadcrumb-item"
-                  href="/docs/conversational-ai/overview"
+                  href="/overview"
                 >
                   GET STARTED
                 </a>
@@ -41,7 +41,7 @@ export default function Quickstart() {
             </a>
             . This is used to:
           </p>
-          <ul className="mb-3 list-outside list-disc space-y-2">
+          {/* <ul className="mb-3 list-outside list-disc space-y-2">
             <li className="">Create and manage AI assistants</li>
             <li className="">
               Configure voice settings and conversation parameters
@@ -64,7 +64,7 @@ export default function Quickstart() {
             </li>
             <li className="">Review conversation analytics and transcripts</li>
             <li className="">Manage API keys and integration settings</li>
-          </ul>
+          </ul> */}
           <div className="mb-6 mt-4 rounded-lg p-4 first:mt-0 callout-outlined-info">
             <div className="flex items-start space-x-3">
               <div className="mt-0.5 w-4">
@@ -268,7 +268,7 @@ export default function Quickstart() {
                   <a
                     className="fern-anchor"
                     tabIndex={-1}
-                    href="/docs/conversational-ai/quickstart#sign-in-to-elevenlabs"
+                    href="/quickstart#sign-in-to-elevenlabs"
                   >
                     <span className="fern-anchor-icon">
                       <span>1</span>
@@ -293,7 +293,7 @@ export default function Quickstart() {
                   <a
                     className="fern-anchor"
                     tabIndex={-1}
-                    href="/docs/conversational-ai/quickstart#create-a-new-assistant"
+                    href="/quickstart#create-a-new-assistant"
                   >
                     <span className="fern-anchor-icon">
                       <span>2</span>
@@ -364,7 +364,7 @@ export default function Quickstart() {
                   <a
                     className="fern-anchor"
                     tabIndex={-1}
-                    href="/docs/conversational-ai/quickstart#configure-the-assistant-behavior"
+                    href="/quickstart#configure-the-assistant-behavior"
                   >
                     <span className="fern-anchor-icon">
                       <span>3</span>
@@ -383,7 +383,7 @@ export default function Quickstart() {
                       <a
                         className="fern-anchor"
                         tabIndex={-1}
-                        href="/docs/conversational-ai/quickstart#first-message"
+                        href="/quickstart#first-message"
                       >
                         <span className="fern-anchor-icon">
                           <span>1</span>
@@ -501,7 +501,7 @@ export default function Quickstart() {
                       <a
                         className="fern-anchor"
                         tabIndex={-1}
-                        href="/docs/conversational-ai/quickstart#system-prompt"
+                        href="/quickstart#system-prompt"
                       >
                         <span className="fern-anchor-icon">
                           <span>2</span>
@@ -712,7 +712,7 @@ export default function Quickstart() {
                   <a
                     className="fern-anchor"
                     tabIndex={-1}
-                    href="/docs/conversational-ai/quickstart#add-a-knowledge-base"
+                    href="/quickstart#add-a-knowledge-base"
                   >
                     <span className="fern-anchor-icon">
                       <span>4</span>
@@ -752,7 +752,7 @@ export default function Quickstart() {
                   <a
                     className="fern-anchor"
                     tabIndex={-1}
-                    href="/docs/conversational-ai/quickstart#select-a-voice"
+                    href="/quickstart#select-a-voice"
                   >
                     <span className="fern-anchor-icon">
                       <span>1</span>
@@ -863,7 +863,7 @@ export default function Quickstart() {
                   <a
                     className="fern-anchor"
                     tabIndex={-1}
-                    href="/docs/conversational-ai/quickstart#testing-your-assistant"
+                    href="/quickstart#testing-your-assistant"
                   >
                     <span className="fern-anchor-icon">
                       <span>2</span>
@@ -892,7 +892,7 @@ export default function Quickstart() {
                   <a
                     className="fern-anchor"
                     tabIndex={-1}
-                    href="/docs/conversational-ai/quickstart#configure-evaluation-criteria"
+                    href="/quickstart#configure-evaluation-criteria"
                   >
                     <span className="fern-anchor-icon">
                       <span>1</span>
@@ -1099,7 +1099,7 @@ export default function Quickstart() {
                   <a
                     className="fern-anchor"
                     tabIndex={-1}
-                    href="/docs/conversational-ai/quickstart#configure-data-collection"
+                    href="/quickstart#configure-data-collection"
                   >
                     <span className="fern-anchor-icon">
                       <span>2</span>
@@ -1257,7 +1257,7 @@ export default function Quickstart() {
                   <a
                     className="fern-anchor"
                     tabIndex={-1}
-                    href="/docs/conversational-ai/quickstart#view-conversation-history"
+                    href="/quickstart#view-conversation-history"
                   >
                     <span className="fern-anchor-icon">
                       <span>3</span>
@@ -1365,7 +1365,7 @@ export default function Quickstart() {
               className="border:content-[''] before:mb-4 before:block"
             />
           </div>
-          <h2 id="next-steps" data-state="closed">
+          {/* <h2 id="next-steps" data-state="closed">
             Next steps
           </h2>
           <div className="my-6 grid gap-4 first:mt-0 sm:gap-6 grid-cols-1 sm:grid-cols-2">
@@ -1405,7 +1405,7 @@ export default function Quickstart() {
                 </div>
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
       </article>
     </main>

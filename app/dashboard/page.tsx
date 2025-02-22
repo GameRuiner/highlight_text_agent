@@ -8,7 +8,7 @@ export default function Dashboard() {
               <span className="fern-breadcrumb">
                 <a
                   className="fern-breadcrumb-item"
-                  href="/docs/conversational-ai/overview"
+                  href="/overview"
                 >
                   GET STARTED
                 </a>

@@ -9,7 +9,7 @@ export default function Overview() {
                 <span className="fern-breadcrumb">
                   <a
                     className="fern-breadcrumb-item"
-                    href="/docs/conversational-ai/overview"
+                    href="/overview"
                   >
                     GET STARTED
                   </a>
@@ -108,8 +108,8 @@ export default function Overview() {
                   </div>
                 </div>
               </div>
-            </div>
-            <p>
+             </div>
+            {/*<p>
               Altogether it is a highly composable AI Voice agent solution that can
               scale to thousands of calls per day. With
               <a
@@ -147,7 +147,7 @@ export default function Overview() {
                 overrides
               </a>
               , plus built-in monitoring, it’s the complete developer toolkit.
-            </p>
+            </p> */}
             <div className="fern-card not-prose relative block rounded-xl border p-6 text-base">
               <div className="flex items-start flex-col space-y-3">
                 <div className="w-full space-y-1 overflow-hidden">
@@ -493,7 +493,7 @@ export default function Overview() {
                       Ready to get started? Check out our{" "}
                       <a
                         className="fern-mdx-link"
-                        href="/docs/conversational-ai/quickstart"
+                        href="/quickstart"
                       >
                         quickstart guide
                       </a>{" "}
