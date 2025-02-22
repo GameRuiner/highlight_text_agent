@@ -53,12 +53,12 @@ export default async function RootLayout({
           <KeyProvider apiKey={apiKey}>
             <SidebarProvider>
               <AppSidebar />
-              <SidebarInset className="background-gradient">
+              <SidebarInset className="background-gradient fern-container fern-theme-default">
                 <header className="relative flex h-[60px] shrink-0 items-center justify-center">
                   <SidebarTrigger className="absolute left-3" />
                 </header>
-                <div className="p-4">
-                  <div className="rounded-lg">{children}</div>
+                <div className="fern-main">
+                  {children}
                 </div>
               </SidebarInset>
             </SidebarProvider>
