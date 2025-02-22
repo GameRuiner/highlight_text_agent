@@ -13,6 +13,7 @@ import {
 import { Toaster } from '@/components/ui/sonner';
 
 import './globals.css';
+import './layout.css'
 
 export const metadata: Metadata = {
   title: {
@@ -57,7 +58,7 @@ export default async function RootLayout({
                   <SidebarTrigger className="absolute left-3" />
                 </header>
                 <div className="p-4">
-                      <div className="rounded-lg">{children}</div>
+                  <div className="rounded-lg">{children}</div>
                 </div>
               </SidebarInset>
             </SidebarProvider>

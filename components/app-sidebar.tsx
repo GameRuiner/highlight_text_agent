@@ -35,13 +35,13 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
-                <SidebarMenuButton asChild isActive={pathname === '/page1'}>
+                <SidebarMenuButton asChild isActive={pathname === '/overview'}>
                   <Link href="/overview">Overview</Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               <SidebarMenuItem>
-                <SidebarMenuButton asChild isActive={pathname === '/page2'}>
-                  <Link href="/page2">Page 2</Link>
+                <SidebarMenuButton asChild isActive={pathname === '/quickstart'}>
+                  <Link href="/quickstart">Quickstart</Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               <SidebarMenuItem>
