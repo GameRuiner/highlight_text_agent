@@ -4,7 +4,6 @@ import { getApiKey } from '@/app/actions';
 import { AppSidebar } from '@/components/app-sidebar';
 import { KeyProvider } from '@/components/key-provider';
 import { ThemeProvider } from '@/components/theme-provider';
-import { Card } from '@/components/ui/card';
 import {
   SidebarInset,
   SidebarProvider,
@@ -12,8 +11,10 @@ import {
 } from '@/components/ui/sidebar';
 import { Toaster } from '@/components/ui/sonner';
 
+import AIWidget from '@/components/ai-widget';
+
 import './globals.css';
-import './layout.css'
+import './layout.css';
 
 export const metadata: Metadata = {
   title: {
@@ -57,12 +58,11 @@ export default async function RootLayout({
                 <header className="relative flex h-[60px] shrink-0 items-center justify-center">
                   <SidebarTrigger className="absolute left-3" />
                 </header>
-                <div className="fern-main">
-                  {children}
-                </div>
+                <div className="fern-main">{children}</div>
               </SidebarInset>
             </SidebarProvider>
           </KeyProvider>
+          <AIWidget /> {/* AI Widget is now included globally */}
           <Toaster />
         </ThemeProvider>
       </body>
