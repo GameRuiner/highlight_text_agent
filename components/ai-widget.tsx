@@ -49,6 +49,10 @@ export default function AIWidget() {
   }, [router]);
 
   return (
-    <elevenlabs-convai agent-id="Y2wSS1WxtpwqBptjalFW"></elevenlabs-convai>
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `<elevenlabs-convai agent-id="Y2wSS1WxtpwqBptjalFW"></elevenlabs-convai>`,
+      }}
+    />
   );
 }
