@@ -174,14 +174,6 @@ export default function Overview() {
               Pricing tiers
             </h2>
             <div dir="ltr" data-orientation="horizontal">
-              <div
-                role="tablist"
-                aria-orientation="horizontal"
-                className="border-default mb-6 mt-4 flex gap-4 border-b first:-mt-3"
-                tabIndex={0}
-                data-orientation="horizontal"
-                style={{ outline: "currentcolor" }}
-              >
                 <h6
                   className="text-default scroll-mt-content-padded hover:border-default data-[state=active]:t-accent data-[state=active]:border-accent -mb-px flex max-w-max cursor-pointer whitespace-nowrap border-b border-transparent pb-2.5 pt-3 text-sm font-semibold leading-6"
                   id="in-minutes"
@@ -196,31 +188,7 @@ export default function Overview() {
                 >
                   In Minutes
                 </h6>
-                <h6
-                  className="text-default scroll-mt-content-padded hover:border-default data-[state=active]:t-accent data-[state=active]:border-accent -mb-px flex max-w-max cursor-pointer whitespace-nowrap border-b border-transparent pb-2.5 pt-3 text-sm font-semibold leading-6"
-                  id="in-credits"
-                  // type="button"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls="radix-:r9:-content-in-credits"
-                  data-state="inactive"
-                  tabIndex={-1}
-                  data-orientation="horizontal"
-                  data-radix-collection-item=""
-                >
-                  In Credits
-                </h6>
               </div>
-              <div
-                data-state="active"
-                data-orientation="horizontal"
-                role="tabpanel"
-                aria-labelledby="radix-:r9:-trigger-in-minutes"
-                id="radix-:r9:-content-in-minutes"
-                tabIndex={0}
-                className="border:content-[''] before:mb-4 before:block"
-                style={{ animationDuration: "0s" }}
-              >
                 <div className="fern-table-root not-prose" data-state="closed">
                   <div
                     dir="ltr"
@@ -292,18 +260,6 @@ export default function Overview() {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                data-state="inactive"
-                data-orientation="horizontal"
-                role="tabpanel"
-                aria-labelledby="radix-:r9:-trigger-in-credits"
-                // hidden=""
-                id="radix-:r9:-content-in-credits"
-                tabIndex={0}
-                className="border:content-[''] before:mb-4 before:block"
-              />
-            </div>
             <div className="mb-6 mt-4 rounded-lg p-4 first:mt-0 callout-outlined-info">
               <div className="flex items-start space-x-3">
                 <div className="mt-0.5 w-4">

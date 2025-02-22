@@ -111,43 +111,6 @@ export default function Quickstart() {
           </div>
           <div dir="ltr" data-orientation="horizontal">
             <div
-              role="tablist"
-              aria-orientation="horizontal"
-              className="border-default mb-6 mt-4 flex gap-4 border-b first:-mt-3"
-              tabIndex={0}
-              data-orientation="horizontal"
-              style={{ outline: "currentcolor" }}
-            >
-              <h6
-                className="text-default scroll-mt-content-padded hover:border-default data-[state=active]:t-accent data-[state=active]:border-accent -mb-px flex max-w-max cursor-pointer whitespace-nowrap border-b border-transparent pb-2.5 pt-3 text-sm font-semibold leading-6"
-                id="build-a-support-agent"
-                // type="button"
-                role="tab"
-                aria-selected="true"
-                aria-controls="radix-:r1d:-content-build-a-support-agent"
-                data-state="active"
-                tabIndex={-1}
-                data-orientation="horizontal"
-                data-radix-collection-item=""
-              >
-                Build a support agent
-              </h6>
-              <h6
-                className="text-default scroll-mt-content-padded hover:border-default data-[state=active]:t-accent data-[state=active]:border-accent -mb-px flex max-w-max cursor-pointer whitespace-nowrap border-b border-transparent pb-2.5 pt-3 text-sm font-semibold leading-6"
-                id="build-a-restaurant-ordering-agent"
-                // type="button"
-                role="tab"
-                aria-selected="false"
-                aria-controls="radix-:r1d:-content-build-a-restaurant-ordering-agent"
-                data-state="inactive"
-                tabIndex={-1}
-                data-orientation="horizontal"
-                data-radix-collection-item=""
-              >
-                Build a restaurant ordering agent
-              </h6>
-            </div>
-            <div
               data-state="active"
               data-orientation="horizontal"
               role="tabpanel"
