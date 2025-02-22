@@ -16,7 +16,6 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { demos } from '@/lib/demos';
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const pathname = usePathname();
@@ -31,25 +30,28 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         </div>
       </SidebarHeader>
       <SidebarContent>
-        {demos.map((demo) => (
-          <SidebarGroup key={demo.name}>
-            <SidebarGroupLabel>{demo.name}</SidebarGroupLabel>
-            <SidebarGroupContent>
-              <SidebarMenu>
-                {demo.items.map((item) => (
-                  <SidebarMenuItem key={item.name}>
-                    <SidebarMenuButton asChild isActive={pathname === `/${item.slug}`}>
-                      <a href={`/${item.slug}`}>
-                        {item.icon && <item.icon className="!h-[18px] !w-[18px] stroke-[2]" />}
-                        {item.name}
-                      </a>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                ))}
-              </SidebarMenu>
-            </SidebarGroupContent>
-          </SidebarGroup>
-        ))}
+        <SidebarGroup>
+          <SidebarGroupLabel>Pages</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild isActive={pathname === '/page1'}>
+                  <Link href="/page1">Page 1</Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild isActive={pathname === '/page2'}>
+                  <Link href="/page2">Page 2</Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+              <SidebarMenuItem>
+                <SidebarMenuButton asChild isActive={pathname === '/page3'}>
+                  <Link href="/page3">Page 3</Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
       </SidebarContent>
     </Sidebar>
   );

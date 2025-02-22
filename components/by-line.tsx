@@ -11,17 +11,6 @@ export function Byline() {
           <Link href="/">
             <Logo className="dark:text-white" width={100} />
           </Link>
-
-          <div className="text-sm text-gray-400">
-            <a
-              className="underline decoration-dotted underline-offset-4 transition-colors hover:text-gray-300"
-              href="https://github.com/elevenlabs/elevenlabs-examples"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View code
-            </a>
-          </div>
         </div>
       </div>
     </Card>
