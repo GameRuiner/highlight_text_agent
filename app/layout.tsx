@@ -57,11 +57,7 @@ export default async function RootLayout({
                   <SidebarTrigger className="absolute left-3" />
                 </header>
                 <div className="p-4">
-                  <div className="mx-auto max-w-4xl space-y-3 px-2 pt-20 lg:px-8 lg:py-8">
-                    <Card className="border-gradient rounded-lg p-px shadow-lg">
-                      <div className="bg-card rounded-lg">{children}</div>
-                    </Card>
-                  </div>
+                      <div className="rounded-lg">{children}</div>
                 </div>
               </SidebarInset>
             </SidebarProvider>
