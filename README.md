@@ -2,6 +2,8 @@
 
 ## TITLE: Mark.ai  
 
+![AI Agent which scrolls and highlights relevant content](image.png "Visual")
+
 ### PROBLEM  
 Conversational AI generates inaccurate (hallucinated) responses, leading to low user trust.  
 
