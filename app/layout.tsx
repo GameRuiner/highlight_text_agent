@@ -43,9 +43,6 @@ export default async function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning className="dark">
-      <head>
-        <script src="https://elevenlabs.io/convai-widget/index.js" async></script>
-      </head>
       <body>
         <ThemeProvider
           attribute="class"
@@ -65,7 +62,7 @@ export default async function RootLayout({
               </SidebarInset>
             </SidebarProvider>
           </KeyProvider>
-          <AIWidget />
+          <AIWidget /> {/* AI Widget is now included globally */}
           <Toaster />
         </ThemeProvider>
       </body>

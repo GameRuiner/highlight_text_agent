@@ -9,32 +9,38 @@ export default function AIWidget() {
   const pathname = usePathname();
 
   useEffect(() => {
-    console.log("new article set")
-    if (widgetRef.current) {
-      const article = document.querySelector('article');
-      const articleText = article ? article.textContent?.trim() || '' : '';
-      const dynamicVars = {
-        article: articleText,
-      };
-      widgetRef.current.setAttribute('dynamic-variables', JSON.stringify(dynamicVars));
-    }
-  }, [pathname]);
-
-  useEffect(() => {
-    console.log("Widget redefined")
     const widget = document.querySelector(
       'elevenlabs-convai'
     ) as HTMLElement | null;
     if (widget) {
       widgetRef.current = widget;
+      const article = document.querySelector('article');
+      const articleText = article ? article.textContent?.trim() || '' : '';
+      const dynamicVars = {
+        article: articleText,
+      };
+      widget.setAttribute('dynamic-variables', JSON.stringify(dynamicVars));
+    }
+  }, [pathname]);
+
+  useEffect(() => {
+    const widget = document.querySelector(
+      'elevenlabs-convai'
+    ) as HTMLElement | null;
+    if (widget) {
+      widgetRef.current = widget;
+      const article = document.querySelector('article');
+      const articleText = article ? article.textContent?.trim() || '' : '';
+      const dynamicVars = {
+        article: articleText,
+      };
+      widget.setAttribute('dynamic-variables', JSON.stringify(dynamicVars));
+
       widget.addEventListener('elevenlabs-convai:call', (event) => {
         const customEvent = event as CustomEvent;
         customEvent.detail.config.clientTools = {
           redirectToDifferentArticle: async ({ url }: { url: string }) => {
-            console.log('redirectToDifferentArticle', url)
-            const slug = url.split("/").at(-1) || '';
-            console.log(slug);
-            router.replace(slug);
+            router.push(url);
             return 'Redirected to URL';
           },
           hightlightTextOnPage: async ({
@@ -42,7 +48,6 @@ export default function AIWidget() {
           }: {
             textFragmentDirective: string;
           }) => {
-            console.log('hightlightTextOnPage', textFragmentDirective)
             if (!textFragmentDirective.startsWith('#:~:text=')) {
               textFragmentDirective = '#:~:text=' + textFragmentDirective;
             }
@@ -52,7 +57,12 @@ export default function AIWidget() {
         };
       });
     }
-  }, []);
+
+    const script = document.createElement('script');
+    script.src = 'https://elevenlabs.io/convai-widget/index.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, [router]);
 
   return (
     <div
