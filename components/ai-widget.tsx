@@ -24,7 +24,8 @@ export default function AIWidget() {
         const customEvent = event as CustomEvent;
         customEvent.detail.config.clientTools = {
           redirectToDifferentArticle: async ({ url }: { url: string }) => {
-            router.push(url);
+            const path = url.split(':3000')[1] || '/';
+            router.push(path);
             return 'Redirected to URL';
           },
           hightlightTextOnPage: async ({
