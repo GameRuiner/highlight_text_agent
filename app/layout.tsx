@@ -26,7 +26,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Mark.ai Conversational Agent',
     description: 'AI Agent which scrolls and highlights relevant content that directly addresses the user\'s query.',
-    images: [`/api/og?title=ElevenLabs Next.js Playground`],
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Mark.ai Open Graph Image',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
