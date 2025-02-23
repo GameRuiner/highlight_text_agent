@@ -10,8 +10,8 @@ import {
   SidebarTrigger,
 } from '@/components/ui/sidebar';
 import { Toaster } from '@/components/ui/sonner';
-
 import AIWidget from '@/components/ai-widget';
+import { PostHogProvider } from './providers'
 
 import './globals.css';
 import './layout.css';
@@ -52,15 +52,17 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           <KeyProvider apiKey={apiKey}>
-            <SidebarProvider>
-              <AppSidebar />
-              <SidebarInset className="background-gradient fern-container fern-theme-default">
-                <header className="relative flex h-[60px] shrink-0 items-center justify-center">
-                  <SidebarTrigger className="absolute left-3" />
-                </header>
-                <div className="fern-main">{children}</div>
-              </SidebarInset>
-            </SidebarProvider>
+            <PostHogProvider>
+              <SidebarProvider>
+                <AppSidebar />
+                <SidebarInset className="background-gradient fern-container fern-theme-default">
+                  <header className="relative flex h-[60px] shrink-0 items-center justify-center">
+                    <SidebarTrigger className="absolute left-3" />
+                  </header>
+                  <div className="fern-main">{children}</div>
+                </SidebarInset>
+              </SidebarProvider>
+            </PostHogProvider>
           </KeyProvider>
           <AIWidget /> {/* AI Widget is now included globally */}
           <Toaster />
