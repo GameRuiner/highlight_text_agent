@@ -18,14 +18,14 @@ import './layout.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'ElevenLabs Next.js Playground',
-    template: '%s | ElevenLabs Next.js',
+    default: 'Mark.ai Conversational Agent',
+    template: '%s | Mark.ai',
   },
-  metadataBase: new URL('https://elevenlabs-playground.vercel.app'),
-  description: 'A Next.JS playground to explore ElevenLabs capabilities.',
+  metadataBase: new URL('https://highlight-text-agent.vercel.app'),
+  description: 'AI Agent which scrolls and highlights relevant content that directly addresses the user\'s query.',
   openGraph: {
-    title: 'ElevenLabs Next.js Playground',
-    description: 'A playground to explore ElevenLabs capabilities.',
+    title: 'Mark.ai Conversational Agent',
+    description: 'AI Agent which scrolls and highlights relevant content that directly addresses the user\'s query.',
     images: [`/api/og?title=ElevenLabs Next.js Playground`],
   },
   twitter: {
