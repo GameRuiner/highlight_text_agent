@@ -1,34 +1,36 @@
-# Project Overview
+# mark.ai
 
-## TITLE: Mark.ai  
+> Show, don't tell. Mark it with Mark.ai ✎
 
 ![AI Agent which scrolls and highlights relevant content](image.png "Visual")
 
-### PROBLEM  
-Conversational AI generates inaccurate (hallucinated) responses, leading to low user trust.  
+## Problem
 
-### SOLUTION  
-AI Agent which scrolls and highlights relevant content that directly addresses the user's query.  
+Conversational AIs often produce inaccurate or misleading responses. This leads to low user trust in their answers.
 
-### VALUE PROPOSITION  
-- Build user trust in AI-generated responses.  
-- Save time and minimize effort needed to navigate documentation.  
+## Solution
 
----
+That’s where Mark.ai comes in, an AI Agent which scrolls through the webpage of the documentation and highlights relevant content that directly addresses your question.
 
-# Team  
+### Value Proposition
 
-- **Wojciech Mroczyński** – Prompt engineering, backend development  
-- **Marko Golovko** – Full stack development  
+- Build user trust in AI-generated responses.
+- Save time and minimize cognitive effort needed to navigate documentation.
 
 ---
 
-# Technical Details  
+## Team
 
-### TECH STACK  
-- **Conversational AI** – ElevenLabs (agent widget)  
-- **Next.js** – Full stack app  
-- **Text Fragments** – Cross-browser standard; LLM using it via tool calling to scroll & highlight relevant text on the currently viewed webpage  
+- **Wojciech Mroczyński** – Prompt engineering, backend development
+- **Marko Golovko** – Full stack development
+
+## Tech Stack
+
+- **Conversational AI** – ElevenLabs (agent widget)
+- **Next.js** – Full stack app
+- **Text Fragments** – Cross-browser standard; LLM using it via tool calling to scroll & highlight relevant text on the currently viewed webpage
+
+---
 
 ## Quick Start
 
@@ -42,6 +44,8 @@ Edit the `.env` file with your ElevenLabs API key, and PostHog variables for ana
 npm install
 npm dev
 ```
+
+---
 
 ## Learn More
 
