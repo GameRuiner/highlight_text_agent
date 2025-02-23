@@ -14471,3 +14471,35 @@ a.fern-card {
     margin-bottom: 1.25em;
     margin-top: 1.25em;
 }
+
+.prose :where(h3 strong):not(:where([class~=not-prose],[class~=not-prose] *)) {
+    color: inherit;
+    font-weight: 700
+}
+
+.prose :where(h4):not(:where([class~=not-prose],[class~=not-prose] *)) {
+    color: var(--tw-prose-headings);
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: .5em;
+    margin-top: 1.5em
+}
+
+.prose :where(h4 strong):not(:where([class~=not-prose],[class~=not-prose] *)) {
+    color: inherit;
+    font-weight: 700
+}
+
+.prose :where(h2 strong):not(:where([class~=not-prose],[class~=not-prose] *)) {
+    color: inherit;
+    font-weight: 800
+}
+
+.prose :where(h3):not(:where([class~=not-prose],[class~=not-prose] *)) {
+    color: var(--tw-prose-headings);
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: .6em;
+    margin-top: 1.6em
+}
