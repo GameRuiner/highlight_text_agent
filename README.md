@@ -1,8 +1,32 @@
-## ElevenLabs NextJS Template
+# Project Overview
 
-![quickstart](https://github.com/user-attachments/assets/e3b585b4-8cf8-4775-adce-33ef9a55b0ba)
+## TITLE: Mark.ai  
 
-This project is a minimal example to demonstrate how to run a Next.js application with ElevenLabs.
+### PROBLEM  
+Conversational AI generates inaccurate (hallucinated) responses, leading to low user trust.  
+
+### SOLUTION  
+AI Agent which scrolls and highlights relevant content that directly addresses the user's query.  
+
+### VALUE PROPOSITION  
+- Build user trust in AI-generated responses.  
+- Save time and minimize effort needed to navigate documentation.  
+
+---
+
+# Team  
+
+- **Wojciech Mroczyński** – Prompt engineering, backend development  
+- **Marko Golovko** – Full stack development  
+
+---
+
+# Technical Details  
+
+### TECH STACK  
+- **Conversational AI** – ElevenLabs (agent widget)  
+- **Next.js** – Full stack app  
+- **Text Fragments** – Cross-browser standard; LLM using it via tool calling to scroll & highlight relevant text on the currently viewed webpage  
 
 ## Quick Start
 
@@ -10,17 +34,12 @@ This project is a minimal example to demonstrate how to run a Next.js applicatio
 cp .env.example .env
 ```
 
-Edit the `.env` file with your ElevenLabs API key.
+Edit the `.env` file with your ElevenLabs API key, and PostHog variables for analytics.
 
 ```bash
-pnpm install
-pnpm dev
+npm install
+npm dev
 ```
-
-Open http://localhost:3000 to view your app.
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 ## Learn More
 
