@@ -4,6 +4,10 @@
 
 ![AI Agent which scrolls and highlights relevant content](image.png "Visual")
 
+## Demo
+
+[![mark.ai in action](https://www.youtube.com/watch?v=0-SlsLuyQeI)](https://www.youtube.com/watch?v=0-SlsLuyQeI)
+
 ## Problem
 
 Conversational AIs often produce inaccurate or misleading responses. This leads to low user trust in their answers.
